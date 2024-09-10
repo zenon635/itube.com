@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itube</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Itube</div>
+        <input type="text" id="search" placeholder="Search...">
+        <button id="search-button">Search</button>
+    </header>
+
+    <main>
+        <section class="video-player">
+            <div class="video-container">
+                <video id="main-video" controls>
+                    <source src="sample.mp4" type="video/mp4">
+
+                </video>
+                <h2 id="video-title">Фриман</h2>
+            </div>
+        </section>
+
+        <section class="video-list">
+            <h2>Recommended</h2>
+            <div class="video-item" onclick="playVideo('sample3.mp4', 'без паники')">
+                <img src="thumbnail1.jpg" alt="Thumbnail 1">
+                <p>без паники</p>
+            </div>
+						<div class="video-item" onclick="playVideo('sample2.mp4', 'Usseewa')">
+                <img src="thumbnail2.jpg" alt="Thumbnail 2">
+                <p>Usseewa</p>
+            </div>
+						<div class="video-item" onclick="playVideo('sample.mp4', 'фриман')">
+                <img src="thumbnail3.jpg" alt="Thumbnail 3">
+                <p>фриман</p>
+            </div>
+            <!-- Add more video items here -->
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
